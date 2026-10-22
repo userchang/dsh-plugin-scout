@@ -1,6 +1,6 @@
 # dsh-plugin-scout 情报员日报
 
-一个 **DeepSeek Helper（DSH）插件**：每天到点自动采集技术情报（GitHub、Hacker News、B 站等），用 DeepSeek 汇总成一份中文日报，推送到你的飞书群。
+一个 **DeepSeek Harness（DSH）插件**：每天到点自动采集技术情报（GitHub、Hacker News、B 站等），用 DeepSeek 汇总成一份中文日报，推送到你的飞书群。
 
 宿主插件负责跑、设置页负责配，待办清单负责告诉人「去哪拿、给什么权限」。
 
@@ -27,7 +27,7 @@ scout 工程的写入红线：插件只调用它；写入仅限 `config.yaml` �
 
 ## 安装
 
-前置：Windows、DeepSeek Helper（desktop 或 web profile）、Python 3.10+、部署好的 scout 工程。
+前置：Windows、DeepSeek Harness（desktop 或 web profile）、Python 3.10+、部署好的 scout 工程。
 
 ```powershell
 # 解压后进插件目录，一条命令安装（含跨盘兜底）

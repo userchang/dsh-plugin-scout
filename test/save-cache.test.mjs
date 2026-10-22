@@ -27,7 +27,7 @@ const {
 function loadResult({ githubOn, sinceDays, maxItems, focus }) {
   return {
     ok: true,
-    path: 'D:\\DSHwork\\scout\\config.yaml',
+    path: 'scout/config.yaml',
     sha256: `sha-${maxItems}-${sinceDays}`,
     values: {
       focus,

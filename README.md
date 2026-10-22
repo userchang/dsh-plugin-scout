@@ -76,3 +76,9 @@ python -m unittest discover -s test -p "test_*.py"
 
 改完源码重跑 `install.ps1` 即可刷新运行副本（实体拷贝，幂等）。
 
+推送前先跑发布自检，确认仓库里没有本机路径、凭据或内部文档：
+
+```powershell
+python tools/prepublish_check.py
+```
+

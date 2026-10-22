@@ -15,7 +15,7 @@ function loadPlugin(now) {
   let code = source
     .replace(/^import[^\n]*\n/gm, '')
     .replace(/^export /gm, '')
-    .replaceAll('import.meta.url', "'file:///D:/DSHwork/dsh-plugin-scout/lib/index.js'")
+    .replaceAll('import.meta.url', "'file:///app/plugin/lib/index.js'")
   code = `
     const z = (() => {
       const chain = new Proxy(function () {}, { get: () => chain, apply: () => chain })
@@ -28,8 +28,8 @@ function loadPlugin(now) {
     const runDailyWithMidnightRetry = async () => ({})
     const retryMetadata = () => ({})
     const staleDateMessage = () => ''
-    const fileURLToPath = () => 'D:/DSHwork/dsh-plugin-scout/lib/index.js'
-    const dirname = () => 'D:/DSHwork/dsh-plugin-scout/lib'
+    const fileURLToPath = () => '/app/plugin/lib/index.js'
+    const dirname = () => '/app/plugin/lib'
     const join = (...parts) => parts.join('/')
     ${code}
     globalThis.__plugin = { apply }

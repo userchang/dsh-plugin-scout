@@ -555,10 +555,7 @@ window.__ModuleLoader__.load({
         setTabState(next)
         writeTab(next)
         setFlash('')
-        requestAnimationFrame(() => {
-          const node = panelRef.current
-          if (node && typeof node.scrollIntoView === 'function') node.scrollIntoView({ block: 'nearest' })
-        })
+        // 切换选项卡不滚动面板：保持用户当前的滚动位置（否则面板顶部会被顶到视口顶）。
       }, [])
 
       React.useEffect(() => {

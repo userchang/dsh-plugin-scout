@@ -1,0 +1,41 @@
+{
+  "name": "dsh-plugin-scout",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "把 scout 技术情报日报做成 DSH 原生插件：工具 + 设置页 + 定时",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/bridge.py",
+    "lib/config_io.py",
+    "lib/cred_status.js",
+    "lib/retry.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "install.ps1",
+    "uninstall.ps1",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "license": "MIT"
+}

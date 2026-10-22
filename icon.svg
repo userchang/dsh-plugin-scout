@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="情报员日报">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#g)"/>
+  <path d="M18 24h20v3H18zm0 7h28v3H18zm0 7h24v3H18zm0 7h16v3H18z" fill="#fff" opacity=".92"/>
+  <circle cx="46" cy="20" r="5" fill="#fff"/>
+  <path d="M46 15.5v9M41.5 20h9" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round"/>
+</svg>

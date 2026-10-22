@@ -1,0 +1,8 @@
+_backup/
+进度.md
+任务书.md
+__pycache__/
+node_modules/
+test/.tmp/
+*.log
+.DS_Store

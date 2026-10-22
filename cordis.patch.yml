@@ -1,0 +1,7 @@
+# dsh-plugin-scout 的 Loader 补丁层。
+# 只插入一行；配置默认值由 lib/index.js 的 Config schema 提供，
+# 用户在设置页的修改会写回 profile 的 cordis.patch.yml（按 id 覆盖本行 config）。
+- insert:
+    - id: scout
+      name: dsh-plugin-scout
+      config: {}
